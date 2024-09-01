@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html в школе itcats</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      #yellow {
+        color: yellow;
+      }
+      #blue {
+        color: blue;
+      }
+      #red {
+        color: red;
+      }
+      p {
+        color: chocolate;
+      }
+      .green-color {
+        color: green;
+      }
+      .green-important {
+        color: green !important;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="green-color" id="yellow" style="color: red">
+      Этот текст красный, потому что правила атрибута style перевешивают все
+      остальные.
+    </p>
+    <p class="green-color" id="blue">Этот текст голубой, потому что id перевешивает класс.</p>
+    <p class="green-important" id="red">Этот текст зелёный, потому что зелёный цвет с атрибутом important.</p>
+    <p class="green-color">Этот текст зелёный, благодаря селектору класса.</p>
+    <p>У этого текста шоколадный цвет, благодаря селектору тега p.</p>
+  </body>
+</html>

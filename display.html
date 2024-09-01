@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="display: none">Этот текст вы не увидите!</div>
+    <span class="red" style="display: block">
+      Этот спан стал блочным тегом.
+    </span>
+    <div class="green" style="display: inline">
+      Этот див стал строчным тегом.
+    </div>
+    <div class="square blue" style="display: inline-block">Инлайн блок.</div>
+    <div class="square green" style="display: inline-block">Инлайн блок.</div>
+    <h1>Display table.</h1>
+    <div style="display: table">
+      <div style="display: table-caption" class="red">Заголовок таблицы</div>
+      <div style="display: table-row">
+        <div style="display: table-cell" class="blue">
+          Первая строка, первая ячейка.
+        </div>
+        <div style="display: table-cell" class="green">
+          Первая строка, вторая ячейка.
+        </div>
+      </div>
+      <div style="display: table-row">
+        <div style="display: table-cell" class="green">
+          Вторая строка, первая ячейка.
+        </div>
+        <div style="display: table-cell" class="blue">
+          Вторая строка, вторая ячейка.
+        </div>
+      </div>
+    </div>
+    <h1>Display flex.</h1>
+    <div style="display: flex; justify-content: space-around">
+      <div class="red">Первый флекс блок</div>
+      <div class="blue">Второй флекс блок</div>
+      <div class="green">Третий флекс блок</div>
+    </div>
+    <h1>Display grid.</h1>
+    <div style="display: grid; grid-template-columns: 200px auto 100px">
+      <div class="red">Первый блок сетки</div>
+      <div class="green">Второй блок сетки</div>
+      <div class="blue">Третий блок сетки</div>
+    </div>
+  </body>
+</html>

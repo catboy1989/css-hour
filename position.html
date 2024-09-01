@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    .sticky {
+      position: sticky;
+      top: 50px;
+      margin-left: 400px;
+    }
+    .relative {
+      position: relative;
+      top: 20px;
+      left: 20px;
+    }
+    .absolute {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      width: 140px;
+      height: 140px;
+      background-color: yellow;
+    }
+    .fix {
+      position: fixed;
+      bottom: 0px;
+      right: 0px;
+    }
+  </style>
+  <body>
+    <h1>Position sticky</h1>
+    <div class="square green sticky">Липкий блок.</div>
+    <h1>Position relative</h1>
+    <div class="square green relative">
+      Блок с относительным позиционированием.
+    </div>
+    <div class="square blue">Обычный статичный блок.</div>
+
+    <h1>Position absolute</h1>
+    <div style="position: relative">
+      <div class="square green">Длинный текст обычного статичного блока.</div>
+      <div class="absolute">Текст абсолютного блока.</div>
+      <div class="square red">Статичный блок.</div>
+    </div>
+    <h1>Position fix</h1>
+    <div class="square blue fix">Текст фиксированного блока.</div>
+    <h1>Float</h1>
+    <div style="background-color: aqua">
+      Пишем длинный текст, который содержится в обычном статическом блоке.
+      <div class="square green" style="float: left">Плавающий блок.</div>
+      <div class="square red">Статичный блок.</div>
+      <div class="square green" style="float: left">Плавающий блок.</div>
+      <div class="square red" style="float: left">Плавающий блок.</div>
+      <div class="square green" style="float: left">Плавающий блок.</div>
+    </div>
+  </body>
+</html>

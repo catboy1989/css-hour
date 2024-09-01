@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        font-size: 24px;
+    }
+    div p {
+        color: green;
+    }
+    p {
+        color: red;
+    }
+    div p:hover {
+        color: red;
+    }
+    div > p + p:hover {
+        color:magenta;
+    }
+</style>
+<body>
+    <div>
+        <p>Первый текст внутри div.</p>
+        <p>Второй текст внутри div.</p>
+        <p>Третий текст внутри div.</p>
+    </div>
+    <p>Текст не находящийся внутри div.</p>
+    
+</body>
+</html>
